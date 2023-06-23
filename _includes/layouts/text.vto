@@ -1,0 +1,28 @@
+---
+layout: ./base.vto
+styles: /styles/texts.css
+---
+
+<main class="ly-wrapper-grid has-navbar-menu-local">
+  <ul class="navbar-menu-local" id="menu">
+    <li>
+        <a href="/">Ir a la portada</a>
+    </li>
+  </ul>
+
+  <article class="text ly-document">
+    <header class="ly-document-header has-dotsShadow">
+      <h1 class="text-title over-dotsShadow">{{ title }}</h1>
+
+      {{ if it.subtitle }}
+      <p class="text-subtitle over-dotsShadow">{{ subtitle }}</p>
+      {{ /if }}
+    </header>
+
+    <div class="text-body ly-document-body">
+      {{ content }}
+    </div>
+  </article>
+
+  {{ include "templates/footer.vto" }}
+</main>

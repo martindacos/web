@@ -1,0 +1,66 @@
+title: Blog
+layout: layouts/home.vto
+about:
+  title: Tecnología, front-end y diseño.
+  intro: |
+    Este blog será una prueba con el objectivo de mejorar mis habilidades de diseño y front-end.
+  cta:
+    text: Descarga algo
+    url: https://www.example.com
+
+menu_local:
+  - text: FAQ
+    url: "#faq"
+  - text: Contacto
+    url: "#contacto"
+  - text: Inicio
+    url: "#"
+
+block_calendar:
+  title: Agenda
+  intro: |
+    Esta va a ser la agenda:
+  days:
+    - title: Jueves 26
+      items:
+        - time: XX:XX-XX:XXh
+          title: Title XXXX
+          description: |
+            XXXX
+        - time: YY:YY-YY:YYh
+          title: Title YYYY
+          description: |
+            YYYY
+        - time: ZZ:ZZ-ZZ:ZZh
+          title: Title ZZZZ
+          description: |
+            ZZZZ
+
+contact:
+  title: Contacto
+  items:
+    - title: Martín Dacosta
+      info: Developer
+      links:
+        - text: email@email.com
+          url: mailto:email@email.com
+          icon: /img/icons/envelope-duotone.svg
+    - title: Martín Dacosta
+      info: Developer
+      links:
+        - text: email@email.com
+          url: mailto:email@email.com
+          icon: /img/icons/envelope-duotone.svg
+
+faq:
+  title: What the FAQ?
+  questions:
+    - question: ¿Cómo tengo que hacer para tener un blog como este?
+      answer: |
+        No tienes muchas cosas que hacer, basta con tomar esta plantilla como referencia y modificarla a tu gusto.
+    - question: ¿Cómo tengo que hacer para tener un blog como este?
+      answer: |
+        No tienes muchas cosas que hacer, basta con tomar esta plantilla como referencia y modificarla a tu gusto.
+    - question: ¿Cómo tengo que hacer para tener un blog como este?
+      answer: |
+        No tienes muchas cosas que hacer, basta con tomar esta plantilla como referencia y modificarla a tu gusto.

@@ -1,0 +1,16 @@
+<footer class="footer">
+  <div>
+    {{ footer.copyright |> md }}
+  </div>
+
+  <ul>
+    {{ for item of footer.menu }}
+    <li>
+        <a href="{{ item.href }}">
+            {{ item.text }}
+        </a>
+    </li>
+    {{ /for }}
+  </ul>
+
+</footer>

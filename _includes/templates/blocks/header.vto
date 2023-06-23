@@ -1,0 +1,19 @@
+<header class="block-header {{ block.is_center && "is-center" }}">
+  {{ if block.title }}
+  <h1 class="block-header-title">
+    {{ block.title }}
+  </h1>
+  {{ /if }}
+
+  {{ if block.subtitle }}
+  <h2 class="block-header-subtitle">
+    {{ block.subtitle }}
+  </h2>
+  {{ /if }}
+
+  {{ if block.intro }}
+  <div class="block-header-intro">
+    {{ block.intro |> md }}
+  </div>
+  {{ /if }}
+</header>

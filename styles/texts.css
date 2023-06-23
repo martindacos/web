@@ -1,0 +1,32 @@
+main {
+  padding-bottom: var(--row-gap);
+}
+.text {
+  padding-bottom: var(--row-gap);
+  padding-top: calc(5vw + 1em);
+}
+
+@media (min-width: 700px) {
+  .text-body {
+    background-color: var(--color-sepia);
+    position: relative;
+    padding: 2rem 0 0 5vw;
+    margin-left: -5vw;
+    margin-top: -2rem;
+  }
+}
+.has-dotsShadow::after {
+  --size: 10;
+  animation: anim-shape-2 5s linear infinite alternate both;
+
+  width: max(300px, 30vw);
+  height: max(300px, 30vw);
+  top: -50px;
+  left: -20vw;
+}
+@media (max-width: 700px) {
+  .has-dotsShadow::after {
+    --size: 8;
+    border: none;
+  }
+}
