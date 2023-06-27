@@ -24,20 +24,8 @@ const site = lume()
     "https://unpkg.com/ui-normalize@0.3.0/ui-normalize.css",
   )
   .remoteFile(
-    "js/deps/vimeo-player.js",
-    "https://unpkg.com/@vimeo/player@2.20.1/dist/player.es.js",
-  )
-  .remoteFile(
     "js/deps/typed.js",
     "https://unpkg.com/typed.js@2.0.16/dist/typed.module.js",
-  )
-  .remoteFile(
-    "js/deps/carousel.js",
-    "https://unpkg.com/@oom/carousel@4.2.0/src/carousel.js",
-  )
-  .remoteFile(
-    "js/deps/navigation.js",
-    "https://unpkg.com/@oom/carousel@4.2.0/src/navigation.js",
   );
 
 export default site;
