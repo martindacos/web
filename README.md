@@ -1,4 +1,4 @@
-# Web Blog for testing
+# Web for testing
 
 Testing repository for Deno and Lume.
 
