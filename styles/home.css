@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.home-container {
+  --background-image: linear-gradient(to bottom, transparent, var(--color-sepia) min(60vh, 500px));
+  row-gap: var(--row-gap);
+  padding-bottom: var(--row-gap);
+}
+
+.home-splash {
+  grid-column: 1 / -1;
+}
+
+.home-splash-figure {
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -55px;
+  animation-name: bounceInDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  transform-origin: top center;
+}
+
+@media (min-width: 550px) {
+
+.home-splash-figure {
+    width: min(700px, calc(90vw - 100px));
+    margin-top: 0;
+}
+  }
+
+.home-splash-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom left;
+       object-position: bottom left;
+    position: relative;
+    z-index: 2;
+  }
+
+.home-splash-figure::after {
+    --size: 50;
+    --border-color: transparent;
+
+    height: 55%;
+    top: auto;
+    bottom: 0;
+    border-radius: 20px;
+    animation-name: showShadow;
+    animation-duration: .6s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    background-color: var(--color-sepia);
+  }
+
+.home-splash-name {
+  position: absolute;
+  z-index: 2;
+  bottom: 8%;
+  left: 20%;
+  right: 8%;
+  font-family: 'Permanent Marker', cursive;
+  color: var(--color-red);
+  font-size: clamp(18px, 4vw, 35px);
+}
+
+.home-splash-name .typed-cursor {
+    display: none;
+  }
+
+.home-section {
+  position: relative;
+}
+
+.home-section.is-about {
+  display: grid;
+  -moz-column-gap: var(--column-gap);
+       column-gap: var(--column-gap);
+}
+
+.home-section.is-about .text-title-big {
+    max-width: 9em;
+  }
+
+.home-section.is-contact {
+  display: grid;
+  -moz-column-gap: var(--column-gap);
+       column-gap: var(--column-gap);
+  row-gap: 2em;
+}
+
+.home-section.is-contact address {
+    font-style: normal;
+  }
+
+.home-section.is-contact address p {
+      margin-top: 0;
+    }
+
+.home-section.is-contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.home-section.is-contact li {
+    margin: .2em 0;
+  }
+
+.home-section.is-contact img {
+    vertical-align: middle;
+  }
+
+@media (min-width: 700px) {
+
+.home-section.is-contact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+    .home-section.is-contact header {
+      grid-column: 1 / -1;
+    }
+  }
+
+@media (min-width: 1050px) {
+
+.home-section.is-contact {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+    .home-section.is-contact header {
+      grid-column: 1;
+    }
+  }
+
+.home-section.is-faq {
+  display: grid;
+  -moz-column-gap: var(--column-gap);
+       column-gap: var(--column-gap);
+  row-gap: 2em;
+  border-top: solid 2px;
+  padding-top: var(--row-gap);
+}
+
+.home-section.is-faq .faq {
+    border-bottom: solid 2px;
+    padding-bottom: var(--row-gap);
+  }
+
+@media (min-width: 1050px) {
+
+.home-section.is-faq {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+    .home-section.is-faq .faq {
+      grid-column: 2 / 4;
+    }
+  }
+
+.home-section.is-faq .has-dotsShadow::after {
+    animation: anim-shape-1 5s linear infinite alternate both;
+    height: 200px;
+    width: 250px;
+    top: -120px;
+    left: -100px;
+    --color: var(--color-gray);
+    --border-color: var(--color-gray-light);
+  }
+
+.img-fruit {
+  position: absolute;
+  left: 10px;
+  width: max(100px, 40vw);
+  margin-top: -5vh;
+}
+
+@media (min-width: 400px) {
+
+.img-fruit {
+    width: clamp(100px, 25vw, 400px);
+}
+  }
+
+.img-glasses {
+  width: 400px;
+  max-width: 100%;
+}
+
+@media (min-width: 1050px) {
+
+.img-glasses {
+    position: absolute;
+    right: 60vw;
+    top: 200px;
+}
+  }
+
+.calendar-days {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  margin-top: calc(var(--row-gap) / 2);
+}
+
+@media (min-width: 1100px) {
+
+.calendar-days {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+  }
+
+.calendar-day h4 {
+    font-size: var(--font-2-size);
+    letter-spacing: var(--font-2-spacing);
+    line-height: var(--line-height-title);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: solid 2px;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+
+@media (min-width: 1100px) {
+
+.calendar-day h4 {
+      padding-left: 3rem;
+      padding-right: 1rem;
+  }
+    }
+
+.calendar-day dl {
+    margin: 0;
+    padding: 1.5rem 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+@media (min-width: 1100px) {
+
+.calendar-day dl {
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+    }
+
+.calendar-day dt time {
+      display: inline-block;
+      background: var(--color-red);
+      font-size: var(--font-0-size);
+      letter-spacing: var(--font-0-spacing);
+      padding: 0.1em 0.5em;
+      color: white;
+      border-radius: var(--border-radius-small);
+      font-weight: bold;
+    }
+
+.calendar-day dt strong {
+      display: block;
+      font-size: var(--font-2-size);
+      letter-spacing: var(--font-2-spacing);
+      margin-top: 0.2em;
+    }
+
+.calendar-day dd {
+    margin: 0;
+    font-size: var(--font-1-size);
+    letter-spacing: var(--font-1-spacing);
+    line-height: var(--line-height-text);
+  }
+
+.calendar-day p {
+    margin-bottom: 0;
+  }
+
+.calendar-event {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--color-gray-xlight);
+  margin: 0;
+}
+
+/* https://github.com/animate-css/animate.css/blob/main/source/bouncing_entrances/bounceInDown.css */
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0) rotate(5deg);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  75% {
+    transform: translate3d(0, -35px, 0) rotate(2deg);
+  }
+
+  90% {
+    transform: translate3d(0, -20px, 0) rotate(-1deg);
+  }
+
+  to {
+    transform: translate3d(0, -25px, 0) rotate(0deg);
+  }
+}
+
+@keyframes showShadow {
+  from {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50px, 50px);
+  }
+  to {
+    transform: translate(-10px, 10px);
+  }
+}

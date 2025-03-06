@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Martín Dacosta
+Location: Vigo, Galicia, Spain.
+
+/* SITE */
+Last update: 2025-03-06
+Language: Español
+Doctype: HTML5
+Standards: HTML5, CSS3, ES6, SVG
+Software: Lume (https://lume.land/)
+Icons: Phoshor Icons (https://phosphoricons.com/)
