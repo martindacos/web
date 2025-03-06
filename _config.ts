@@ -2,7 +2,7 @@ import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
 import postcss from "lume/plugins/postcss.ts";
 import inline from "lume/plugins/inline.ts";
-import vento from "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/vento/mod.ts";
+import vento from "lume/plugins/vento.ts";
 import basePath from "lume/plugins/base_path.ts";
 
 const site = lume()
